@@ -21,7 +21,7 @@ Begin by deploying your React-based front end to an EC2 instance.
 
 
 ## Deploy ScalarDB Cluster to EKS
-Set up your ScalarDB cluster on EKS (Elastic Kubernetes Service) using Helm. Detailed deployment steps can be found in the following guide: [Helm ScalarDB Cluster Configuration](#).
+Set up your ScalarDB cluster on EKS (Elastic Kubernetes Service) using Helm. Detailed deployment steps can be found in the following guide: [Helm ScalarDB Cluster Configuration](https://scalardb.scalar-labs.com/docs/latest/scalardb-cluster/setup-scalardb-cluster-on-kubernetes-by-using-helm-chart/)
 
 
 
