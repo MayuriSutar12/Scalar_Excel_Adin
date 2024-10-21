@@ -16,9 +16,7 @@ Begin by deploying your React-based front end to an EC2 instance.
 ## Deploy ScalarDB Cluster to EKS
 Set up your ScalarDB cluster on EKS (Elastic Kubernetes Service) using Helm. Detailed deployment steps can be found in the following guide: [Helm ScalarDB Cluster Configuration](https://scalardb.scalar-labs.com/docs/latest/scalardb-cluster/setup-scalardb-cluster-on-kubernetes-by-using-helm-chart/)
 
-
-
-## Applying HTTPS
+### Applying HTTPS
 Both the frontend (React) and the ScalarDB cluster must have HTTPS configured to ensure secure communication. This is essential because, without HTTPS, you cannot share or use the Excel add-in within Microsoft 365. Once HTTPS is properly set up for both components, you can then proceed to share the updated `manifest.xml` for the add-in deployment.
 
 
