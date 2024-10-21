@@ -244,7 +244,7 @@ Copy the address for future use.
 
 ---
 
-### 5. DNS Configuration in AWS Route 53
+### 4. DNS Configuration in AWS Route 53
 Now that the Kubernetes configurations are set up, you'll need to configure DNS:
 - Go to your Route 53 Hosted Zone.
 - Create a CNAME record that points your custom domain to the Load Balancer’s DNS name:
