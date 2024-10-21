@@ -35,7 +35,7 @@ Both the frontend (React) and the ScalarDB cluster must have HTTPS configured to
 ### 1. Prepare Your EC2 Instance
 - Launch an EC2 instance with the desired specifications.
 - Navigate to the EC2 dashboard and search for Elastic IPs under the Network & Security section.
-- Allocate an Elastic IP address to your EC2 instance. You can refer to the guide at the following link for detailed steps:(https://dev.to/bashirk/how-to-add-a-static-ip-to-an-aws-ec2-instance-2hea).
+- Allocate an Elastic IP address to your EC2 instance. You can refer to the guide at the following link for detailed steps:[How to add a static IP to an AWS EC2 instance](https://dev.to/bashirk/how-to-add-a-static-ip-to-an-aws-ec2-instance-2hea)
 - Use PuTTY (or any SSH client) to log in to your EC2 instance using its public IP, the .ppk file, and the username (usually `ubuntu`).
   
 **Note**: The Elastic IP allocated here will be used in the next section.
