@@ -1,6 +1,6 @@
 Certainly! Below is the provided documentation converted into Markdown format. You can use this format for better readability and organization in platforms like GitHub, Bitbucket, or other markdown-supported systems.
 
-```markdown
+
 # Deployment Documentation
 
 ## Prerequisites
@@ -13,22 +13,22 @@ Certainly! Below is the provided documentation converted into Markdown format. Y
 ### AWS Route 53 for Domain Setup and Record Creation
 - Set up a domain in AWS Route 53 to point to your EC2 instance.
 
----
+
 
 ## Deploy Frontend/React to EC2 Instance
 Begin by deploying your React-based front end to an EC2 instance.
 
----
+
 
 ## Deploy ScalarDB Cluster to EKS
 Set up your ScalarDB cluster on EKS (Elastic Kubernetes Service) using Helm. Detailed deployment steps can be found in the following guide: [Helm ScalarDB Cluster Configuration](#).
 
----
+
 
 ## Applying HTTPS
 Both the frontend (React) and the ScalarDB cluster must have HTTPS configured to ensure secure communication. This is essential because, without HTTPS, you cannot share or use the Excel add-in within Microsoft 365. Once HTTPS is properly set up for both components, you can then proceed to share the updated `manifest.xml` for the add-in deployment.
 
----
+
 
 ## Steps to Deploy a React Front-end on EC2 with Apache and SSL
 
