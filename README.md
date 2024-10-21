@@ -168,7 +168,7 @@ Now, you can move on to deploying the ScalarDB cluster.
 ---
 
 ## Helm ScalarDB Cluster Configuration
-For setting up the ScalarDB cluster on Kubernetes using the Helm chart, please refer to the following link: [Helm ScalarDB Cluster Configuration](#).
+For setting up the ScalarDB cluster on Kubernetes using the Helm chart, please refer to the following link: [Helm ScalarDB Cluster Configuration](https://scalardb.scalar-labs.com/docs/latest/scalardb-cluster/setup-scalardb-cluster-on-kubernetes-by-using-helm-chart/)
 
 ---
 
