@@ -150,9 +150,7 @@ https://your_domain/scalar-excel-addin/taskpane.html
 ```
 If the page loads successfully, your frontend deployment is working fine.
 
----
-
-## Proceed to ScalarDB Cluster Deployment
+### Proceed to ScalarDB Cluster Deployment
 Now, you can move on to deploying the ScalarDB cluster.
 
 ---
