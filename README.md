@@ -2,11 +2,11 @@
 # Deployment Documentation
 
 ## Prerequisites
-### Setting Up Kubernetes (EKS) for the ScalarDB Cluster
+### * Setting Up Kubernetes (EKS) for the ScalarDB Cluster
 
-### EC2 for Frontend Deployment
+### * EC2 for Frontend Deployment
 
-### AWS Route 53 for Domain Setup and Record Creation
+### * AWS Route 53 for Domain Setup and Record Creation
 
 
 
