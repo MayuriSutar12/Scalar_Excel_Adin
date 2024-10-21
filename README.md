@@ -2,7 +2,6 @@
 # Deployment Documentation
 
 ## Prerequisites
-## Key Steps
 
 • Setting Up Kubernetes (EKS) for the ScalarDB Cluster  
 • EC2 for Frontend Deployment  
