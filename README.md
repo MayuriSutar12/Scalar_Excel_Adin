@@ -3,13 +3,10 @@
 
 ## Prerequisites
 ### Setting Up Kubernetes (EKS) for the ScalarDB Cluster
-- Ensure you have an AWS account with necessary permissions to create EKS clusters.
 
 ### EC2 for Frontend Deployment
-- Prepare an EC2 instance for hosting your React application.
 
 ### AWS Route 53 for Domain Setup and Record Creation
-- Set up a domain in AWS Route 53 to point to your EC2 instance.
 
 
 
@@ -40,7 +37,7 @@ Both the frontend (React) and the ScalarDB cluster must have HTTPS configured to
 
 ### 2. Set Up Your Domain in AWS Route 53
 - Go to your AWS Route 53 console.
-- Navigate to Route 53 and select the Hosted Zone for your domain (e.g., `abc.com`).
+- Now, go to your AWS account and navigate to Route 53 and select the Hosted Zone for your domain (e.g., `abc.com`).
 - Inside the Hosted Zone, create a new record with the following details:
   - **Record Name**: Leave this field empty.
   - **Record Type**: A
@@ -115,7 +112,7 @@ sudo systemctl restart apache2
 #### Clone the Project
 Clone the project from GitLab:
 ```bash
-git clone <GitLab_Repo_URL>
+[Excel Add-In Repository](https://gitlab.com/scalarlabs/partners/percept-consulting-services/excel-add-in.git)
 ```
 #### Navigate to the Project Directory
 Move to the `excel-addin-in-react` branch.
