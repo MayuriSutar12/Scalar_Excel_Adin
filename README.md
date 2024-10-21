@@ -265,4 +265,4 @@ Now that the Kubernetes configurations are set up, you'll need to configure DNS:
 
 ```
 
-This Markdown document provides a structured approach to your deployment process, making it easy to read and follow for developers or team members involved in the setup. You can copy this text into any Markdown editor or viewer to see the formatted version.
+
