@@ -50,7 +50,7 @@ sudo apt install apache2
 ### 4. Configure Apache
 - Navigate to the Apache configuration directory:
 ```bash
-cd /etc/apache2/sites-available
+cd/etc/apache2/sites-available
 ```
 - Edit the `000-default.conf` file:
 ```bash
