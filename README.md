@@ -111,9 +111,8 @@ sudo systemctl restart apache2
 ### 7. Deploy a React Front-end on EC2
 #### Clone the Project
 Clone the project from GitLab:
-```bash
 [Excel Add-In Repository](https://gitlab.com/scalarlabs/partners/percept-consulting-services/excel-add-in.git)
-```
+
 #### Navigate to the Project Directory
 Move to the `excel-addin-in-react` branch.
 
