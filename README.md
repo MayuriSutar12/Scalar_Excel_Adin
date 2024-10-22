@@ -213,6 +213,7 @@ scalardbCluster:
 
 ---
 
+
 ## Step-by-Step Configuration in Kubernetes
 
 ### 1. Ingress Controller Setup (NGINX Ingress)
