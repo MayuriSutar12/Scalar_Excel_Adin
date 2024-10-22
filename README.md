@@ -157,6 +157,58 @@ Now, you can move on to deploying the ScalarDB cluster.
 
 ## Helm ScalarDB Cluster Configuration
 For setting up the ScalarDB cluster on Kubernetes using the Helm chart, please refer to the following link: [Helm ScalarDB Cluster Configuration](https://scalardb.scalar-labs.com/docs/latest/scalardb-cluster/setup-scalardb-cluster-on-kubernetes-by-using-helm-chart/)
+For example, the file will be named scalardb-cluster-custom-values.yaml, containing configurations for all databases, ScalarDB authentication, and ScalarDB Cluster SQL.
+
+```yaml
+envoy:
+  enabled: true
+  service:
+    type: "ClusterIP"   # Changed from LoadBalancer to ClusterIP
+
+scalardbCluster:
+  image:
+    repository: "ghcr.io/scalar-labs/scalardb-cluster-node-byol-premium"
+  scalardbClusterNodeProperties: |
+    scalar.db.cluster.node.licensing.license_key={"organization_name":"Scalar Inc / Kanzen Demo","expiration_date_time":null,"product_name":"ScalarDB Cluster","product_version":3,"license_type":"enterprise.premium","signature":"MEYCIQCdHYuqyuEGZOql5eIFsmIiE4p7z/gMlWItTutOEz/t8AIhAJt4nV/b6lkZHJh0z4aU9lial3fkSTJXXfkw0SXyZb5q"}
+    scalar.db.cluster.node.licensing.license_check_cert_pem=-----BEGIN CERTIFICATE-----\nMIICKzCCAdKgAwIBAgIIBXxj3s8NU+owCgYIKoZIzj0EAwIwbDELMAkGA1UEBhMC\nSlAxDjAMBgNVBAgTBVRva3lvMREwDwYDVQQHEwhTaGluanVrdTEVMBMGA1UEChMM\nU2NhbGFyLCBJbmMuMSMwIQYDVQQDExplbnRlcnByaXNlLnNjYWxhci1sYWJzLmNv\nbTAeFw0yMzExMTYwNzExNTdaFw0yNDAyMTUxMzE2NTdaMGwxCzAJBgNVBAYTAkpQ\nMQ4wDAYDVQQIEwVUb2t5bzERMA8GA1UEBxMIU2hpbmp1a3UxFTATBgNVBAoTDFNj\nYWxhciwgSW5jLjEjMCEGA1UEAxMaZW50ZXJwcmlzZS5zY2FsYXItbGFicy5jb20w\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATJx5gvAr+GZAHcBpUvDFDsUlFo4GNw\npRfsntzwStIP8ac3dew7HT4KbGBWei0BvIthleaqpv0AEP7JT6eYAkNvo14wXDAO\nBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwG\nA1UdEwEB/wQCMAAwHQYDVR0OBBYEFMIe+XuuZcnDX1c3TmUPlu3kNv/wMAoGCCqG\nSM49BAMCA0cAMEQCIGGlqKpgv+KW+Z1ZkjfMHjSGeUZKBLwfMtErVyc9aTdIAiAy\nvsZyZP6Or9o40x3l3pw/BT7wvy93Jm0T4vtVQH6Zuw==\n-----END CERTIFICATE-----
+
+    # ScalarDB Cluster configurations
+    scalar.db.cluster.membership.type=KUBERNETES
+    scalar.db.cluster.membership.kubernetes.endpoint.namespace_name=${env:SCALAR_DB_CLUSTER_MEMBERSHIP_KUBERNETES_ENDPOINT_NAMESPACE_NAME}
+    scalar.db.cluster.membership.kubernetes.endpoint.name=${env:SCALAR_DB_CLUSTER_MEMBERSHIP_KUBERNETES_ENDPOINT_NAME}
+
+    # ScalarDB - Auth
+    scalar.db.cluster.auth.enabled=true
+
+    # For ScalarDB Cluster SQL .
+    scalar.db.sql.enabled=true
+    scalar.db.cross_partition_scan.enabled=true
+    scalar.db.cross_partition_scan.filtering.enabled=true
+
+    # You have to use Single-Storage or Multi-storage 
+
+    # Single Storage configurations
+    scalar.db.storage=<STOARGE>
+    scalar.db.contact_points=<CONTACT_POINTS>
+    scalar.db.username=<USERNAME>
+    scalar.db.password=<PASSWORD>
+
+    # Multi Storage configurations( suppose I have mysql and cassandra, this is how configuration is Done.)
+    # scalar.db.storage=multi-storage
+    # scalar.db.multi_storage.storages=mysql,cassandra
+    # scalar.db.multi_storage.storages.mysql.storage=jdbc
+    ## for eg YOUR_JDBC_URI=jdbc:mysql://my-release-mysql.default.svc.cluster.local:3306/
+    # scalar.db.multi_storage.storages.mysql.contact_points=<YOUR_JDBC_URI>        
+    # scalar.db.multi_storage.storages.mysql.username=<USERNAME>
+    # scalar.db.multi_storage.storages.mysql.password=<PASSWORD>
+    # scalar.db.multi_storage.storages.cassandra.storage=cassandra
+    # scalar.db.multi_storage.storages.cassandra.contact_points=<CASSANDRA_CONTACT_POINTS>
+    # scalar.db.multi_storage.storages.cassandra.username=<USERNAME>
+    # scalar.db.multi_storage.storages.cassandra.password=<PASSWORD>
+    ## format Assign namespace:storage_name
+    # scalar.db.multi_storage.namespace_mapping=coordinator:mysql
+    ## Assign default_storage-> one of the storage
+    # scalar.db.multi_storage.default_storage=mysql
 
 ---
 
