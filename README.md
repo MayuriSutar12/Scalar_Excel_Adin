@@ -211,6 +211,7 @@ scalardbCluster:
     ## Assign default_storage-> one of the storage
     # scalar.db.multi_storage.default_storage=mysql
 
+```
 ---
 
 
