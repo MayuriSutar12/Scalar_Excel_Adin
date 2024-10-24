@@ -128,7 +128,9 @@ scalar.db.multi_storage.default_storage=mysql
 ```
 # System Components 
 Thorough understanding of how the system operates
-### What the components do, their responsibilities, and how they interact.
+ What the components do, their responsibilities, and how they interact.
+
+ ### Authentication Flow
 ![Excel Add-In Authentication](excel-add-in-auth.png)
 
 ### Database Operations
