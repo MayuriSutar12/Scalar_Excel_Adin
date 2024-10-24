@@ -51,4 +51,38 @@ The project is built using React version 18.2.0 and requires the ScalarDB Cluste
 - **Protocol Buffers**: v27.3
 - **ScalarDB Cluster Product Version**: 3.12.2
 
+# Functionalities
+Summarize how the system’s tasks (major functions) and roles will be divided and handed off to different subsystems or components ( i.e Modules used, which module is doing which task, which system is responsible for which task.)
+
+** We will list major functionality and which system is doing that
+Ex
+User login, logout, user interaction –
+Table creation, deletion and alter
+CRUD operations on databases
+User creation and assigning or allowing namespaces to users
+Namespace configuration 
+Adding namespaces (if at all)  
+
+
+| Functionality                          | Admin | Normal User | Corresponding gRPC API      |
+|----------------------------------------|-------|-------------|-----------------------------|
+| **1. Authentication**                  |       |             |                             |
+| Login                                  | Yes   | Yes         | /login                      |
+| Logout                                 | Yes   | Yes         | /logout                     |
+| **2. Dashboard**                       |       |             |                             |
+| Fetch all namespaces within the cluster| Yes   | Yes         | /getNamespaceNames          |
+| Scan records based on specified key    | Yes   | Yes         | /scan                       |
+| Fetch table metadata                   | Yes   | Yes         | /getTableMetadata           |
+| Scan records based on an index        | Yes   | Yes         | /scan                       |
+| Delete record by key                   | Yes   | Yes         | /delete                     |
+| Insert and update records               | Yes   | Yes         | /put                        |
+| Start, commit, rollback transactions    | Yes   | Yes         | /begin, /commit, /rollback  |
+| Join tables (Inner, Left, Right Join)  | Yes   | Yes         | /execute                    |
+| **3. Database Management**             |       |             |                             |
+| Create table                           | Yes   | No          | /createTable                |
+| Drop table                             | Yes   | No          | /dropTable                  |
+| Add new column to the table            | Yes   | No          | /addNewColumnToTable        |
+| Create index in an existing table      | Yes   | No          | /createIndex                |
+| Drop index in an existing table        | Yes   | No          | /dropIndex                  |
+
 
