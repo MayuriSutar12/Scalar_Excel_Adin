@@ -86,4 +86,17 @@ Adding namespaces (if at all)
 | Drop index in an existing table                     | Yes   | No          | /dropIndex                        |
 
 
+# Major Design Constraints
+
+- **Scope**: The scope of this design is specifically for the Microsoft Excel desktop application and does not consider Google Worksheets.
+  
+- **Excel Compatibility**: This Add-in is designed for use with Excel 2019 and later versions.
+
+## External Databases
+
+The system relies on an external database for storing information such as users and other related data (configuration details need to be specified).
+
+In ScalarDB, a namespace called **"scalardb"** is automatically created, along with tables that store tokens, users, and privileges, as part of the ScalarDB authentication process. These are created in the default storage, as defined in the `scalardb-cluster-custom-values.yaml` configuration file.
+
+The system uses an external database for storing users and other related information.
 
