@@ -133,4 +133,13 @@ scalar.db.multi_storage.storages.mysql.password: root
 
 # MySQL1 storage configuration
 scalar.db.multi_storage.storages.mysql1.storage: jdbc
+scalar.db.multi_storage.storages.mysql1.contact_points=jdbc:mysql://second-release-mysql.default.svc.cluster.local:3306/
+scalar.db.multi_storage.storages.mysql1.username=root
+scalar.db.multi_storage.storages.mysql1.password=root
+
+# Namespace mapping (format namespace_name:storage_name)
+scalar.db.multi_storage.namespace_mapping=coordinator:mysql,scalar_file_management:mysql,scalar_box:mysql1
+
+# Default storage(default _storage will hold all the authentication related details)
+scalar.db.multi_storage.default_storage=mysql
 
