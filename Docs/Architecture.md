@@ -7,7 +7,7 @@ This tool empowers both technical and non-technical users to efficiently perform
 
 ## Application Architecture
 
-![System Design Diagram](/System%20Design%20Diagram.drawio.png)
+![System Design Diagram](System%20Design%20Diagram.drawio.png)
 
 # Key Files and Their Explanations in the Application
 
