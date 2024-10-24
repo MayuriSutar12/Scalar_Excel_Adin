@@ -44,17 +44,8 @@ The project is built using React version 18.2.0 and requires the ScalarDB Cluste
 - **ScalarDB Cluster Product Version**: 3.12.2
 
 # Functionalities
-Summarize how the system’s tasks (major functions) and roles will be divided and handed off to different subsystems or components ( i.e Modules used, which module is doing which task, which system is responsible for which task.)
 
-** We will list major functionality and which system is doing that
-Ex
-User login, logout, user interaction –
-Table creation, deletion and alter
-CRUD operations on databases
-User creation and assigning or allowing namespaces to users
-Namespace configuration 
-Adding namespaces (if at all)  
-
+**These are functionalities listed below.**
 
 | Functionality                                        | Admin | Normal User | Corresponding gRPC API           |
 |-----------------------------------------------------|-------|-------------|-----------------------------------|
