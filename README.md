@@ -8,7 +8,7 @@
 - AWS Route 53 for Domain Setup and Record Creation  
 
 ## Deployment Architecture Overview
-![Deployment Diagram](Deployment%20Diagram.drawio.png)
+![Deployment Diagram](Docs/Deployment%20Diagram.drawio.png)
 
 ## Deploy Frontend/React to EC2 Instance
 Begin by deploying your React-based front end to an EC2 instance.
