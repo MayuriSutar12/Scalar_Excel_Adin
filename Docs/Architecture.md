@@ -134,6 +134,7 @@ scalar.db.multi_storage.namespace_mapping=coordinator:mysql,scalar_file_manageme
 
 # Default storage(default _storage will hold all the authentication related details)
 scalar.db.multi_storage.default_storage=mysql
+```
 
 # Security Considerations
 
