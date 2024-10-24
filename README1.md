@@ -16,3 +16,22 @@ This tool empowers both technical and non-technical users to efficiently perform
 ## Application Architecture
 
 ![System Design Diagram](Docs/System%20Design%20Diagram.drawio.png)
+
+# Key Files and Their Explanations in the Application
+
+## Key Configuration Files
+
+### Manifest File
+This file is essential for initializing the Excel Add-in. You can upload it to the "My Add-ins" section in Excel to get started.
+
+### Proto Files
+We use three Proto files:
+- `scalardb-auth.proto`
+- `scalardb-cluster.proto`
+- `scalardb-cluster-sql.proto`
+
+These files correspond to ScalarDB Cluster version 3.13.0 and define the communication structure between the client and ScalarDB via gRPC.
+
+### Helm Values File
+The `scalardb-cluster-custom-values.yaml` file is used to deploy the ScalarDB cluster using Helm. It defines the custom configurations required for creating the ScalarDB cluster.
+
