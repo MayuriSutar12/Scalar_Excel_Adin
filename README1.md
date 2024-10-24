@@ -13,3 +13,6 @@ The primary objective of this Excel Add-in is to streamline database management 
 
 This tool empowers both technical and non-technical users to efficiently perform tasks such as data querying, record management, and administrative operations, all while reducing the potential for errors and increasing productivity.
 
+## Application Architecture
+
+![System Design Diagram](Docs/System%20Design%20Diagram.drawio.png)
