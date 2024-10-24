@@ -68,18 +68,6 @@ The project is built using React version 18.2.0 and requires the ScalarDB Cluste
 | Create index in an existing table                  | Yes   | No          | /createIndex                      |
 | Drop index in an existing table                     | Yes   | No          | /dropIndex                        |
 
-# System Components 
-Thorough understanding of how the system operates
-What the components do, their responsibilities, and how they interact.
-
-Database Operations
-
-
-Database Management
-
-
-User Management
-   
 
 # Major Application Constraints
 
@@ -138,7 +126,20 @@ scalar.db.multi_storage.namespace_mapping=coordinator:mysql,scalar_file_manageme
 # Default storage(default _storage will hold all the authentication related details)
 scalar.db.multi_storage.default_storage=mysql
 ```
+# System Components 
+Thorough understanding of how the system operates
+### What the components do, their responsibilities, and how they interact.
+![Excel Add-In Authentication](Docs/excel-add-in-auth.png)
 
+### Database Operations
+![Excel Add-In Database Operations](Docs/excel-add-in-database-operations.png)
+
+### Database Management
+![Excel Add-In Database Management](Docs/excel-add-in-database-management.png)
+![Excel Add-In Database Management 2](Docs/excel-add-in-database-management2.png)
+
+User Management
+   
 # Security Considerations
 
 In our system, authentication, authorization, and data protection are achieved through the use of **ScalarDB authentication** within the **ScalarDB cluster takes care of it**.
