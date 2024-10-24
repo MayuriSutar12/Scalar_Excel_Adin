@@ -13,7 +13,7 @@ This tool empowers both technical and non-technical users to efficiently perform
 
 Key configuration files include:
 
-* Manifest File
+** Manifest File
 This file is essential for initializing the Excel Add-in. You can upload it to the "My Add-ins" section in Excel to get started.
 
 * Proto Files
