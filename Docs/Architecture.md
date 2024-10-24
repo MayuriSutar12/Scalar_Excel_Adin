@@ -135,4 +135,13 @@ scalar.db.multi_storage.namespace_mapping=coordinator:mysql,scalar_file_manageme
 # Default storage(default _storage will hold all the authentication related details)
 scalar.db.multi_storage.default_storage=mysql
 
+# Security Considerations
+
+In our system, authentication, authorization, and data protection are achieved through the use of ScalarDB authentication within the ScalarDB cluster.
+
+We use ScalarDB authentication to validate both admin and user identities. Admins have higher privileges, including managing critical operations, while users have limited access based on their privileges.
+
+Admins and users are authenticated using credentials verified by the ScalarDB cluster, ensuring only authorized individuals can access the system. 
+
+Admin login is responsible for managing user privileges for namespaces and tables, ensuring internal data protection.
 
