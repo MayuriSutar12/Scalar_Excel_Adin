@@ -138,9 +138,9 @@ scalar.db.multi_storage.default_storage=mysql
 
 # Security Considerations
 
-In our system, authentication, authorization, and data protection are achieved through the use of ScalarDB authentication within the ScalarDB cluster.
+In our system, authentication, authorization, and data protection are achieved through the use of **ScalarDB authentication** within the **ScalarDB cluster takes care of it**.
 
-We use ScalarDB authentication to validate both admin and user identities. Admins have higher privileges, including managing critical operations, while users have limited access based on their privileges.
+We use **ScalarDB authentication** to validate both admin and user identities. Admins have higher privileges, including managing critical operations, while users have limited access based on their privileges.
 
 Admins and users are authenticated using credentials verified by the ScalarDB cluster, ensuring only authorized individuals can access the system. 
 
