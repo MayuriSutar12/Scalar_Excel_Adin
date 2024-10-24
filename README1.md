@@ -109,4 +109,11 @@ Ensure that the following properties are added and enabled in the file:
 ```yaml
 Enable ScalarDB Cluster Authentication:
 scalar.db.cluster.auth.enabled=true
+```
+```yaml
+For Using ScalarDB Cluster SQL, enable the following:
+scalar.db.sql.enabled=true
+scalar.db.cross_partition_scan.enabled=true
+scalar.db.cross_partition_scan.filtering.enabled=true
+```
 
