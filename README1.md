@@ -116,4 +116,21 @@ scalar.db.sql.enabled=true
 scalar.db.cross_partition_scan.enabled=true
 scalar.db.cross_partition_scan.filtering.enabled=true
 ```
+We need to configure the databases in scalardb-cluster-custom-values.yaml file
+
+For example check this below configuration for multi storage configuration for two mysql services creyed in k8s
+
+
+```yaml
+scalar.db.storage: multi-storage
+scalar.db.multi_storage.storages: mysql,mysql1
+
+# MySQL storage configuration
+scalar.db.multi_storage.storages.mysql.storage: jdbc
+scalar.db.multi_storage.storages.mysql.contact_points: jdbc:mysql://my-release-mysql.default.svc.cluster.local:3306/
+scalar.db.multi_storage.storages.mysql.username: root
+scalar.db.multi_storage.storages.mysql.password: root
+
+# MySQL1 storage configuration
+scalar.db.multi_storage.storages.mysql1.storage: jdbc
 
