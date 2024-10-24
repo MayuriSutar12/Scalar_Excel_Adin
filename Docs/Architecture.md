@@ -9,9 +9,9 @@ This tool empowers both technical and non-technical users to efficiently perform
 
 ![System Design Diagram](System%20Design%20Diagram.drawio.png)
 
-# Key Files and Their Explanations in the Application
+### Key Files and Their Explanations in the Application
 
-## Key Configuration Files
+Key configuration files include:
 
 ### Manifest File
 This file is essential for initializing the Excel Add-in. You can upload it to the "My Add-ins" section in Excel to get started.
