@@ -129,14 +129,14 @@ scalar.db.multi_storage.default_storage=mysql
 # System Components 
 Thorough understanding of how the system operates
 ### What the components do, their responsibilities, and how they interact.
-![Excel Add-In Authentication](Docs/excel-add-in-auth.png)
+![Excel Add-In Authentication](excel-add-in-auth.png)
 
 ### Database Operations
-![Excel Add-In Database Operations](Docs/excel-add-in-database-operations.png)
+![Excel Add-In Database Operations](excel-add-in-database-operations.png)
 
 ### Database Management
-![Excel Add-In Database Management](Docs/excel-add-in-database-management.png)
-![Excel Add-In Database Management 2](Docs/excel-add-in-database-management2.png)
+![Excel Add-In Database Management](excel-add-in-database-management.png)
+![Excel Add-In Database Management 2](excel-add-in-database-management2.png)
 
 User Management
    
