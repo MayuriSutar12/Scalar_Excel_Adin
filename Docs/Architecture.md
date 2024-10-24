@@ -68,6 +68,18 @@ The project is built using React version 18.2.0 and requires the ScalarDB Cluste
 | Create index in an existing table                  | Yes   | No          | /createIndex                      |
 | Drop index in an existing table                     | Yes   | No          | /dropIndex                        |
 
+# System Components 
+Thorough understanding of how the system operates
+What the components do, their responsibilities, and how they interact.
+
+Database Operations
+
+
+Database Management
+
+
+User Management
+   
 
 # Major Application Constraints
 
