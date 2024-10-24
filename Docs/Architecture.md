@@ -7,7 +7,7 @@ This tool empowers both technical and non-technical users to efficiently perform
 
 ## Application Architecture
 
-![System Design Diagram](Docs/System_Design_Diagram.png)
+![System Design Diagram](System_Design_Diagram.png)
 
 ### Key Files and Their Explanations in the Application
 
