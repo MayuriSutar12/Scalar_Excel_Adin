@@ -214,8 +214,7 @@ scalardbCluster:
     # scalar.db.multi_storage.default_storage=mysql
 
 ```
----
-
+Please update the configuration to use the appropriate storage type, such as multi-storage or single storage. You can also add multiple connections in the configuration file, with any additional connections commented out for reference. Adjust the settings as needed to reflect these changes.
 
 ## Step-by-Step Configuration in Kubernetes
 
