@@ -18,9 +18,6 @@
 | AuthSlice                     | The AuthSlice layer is typically part of a Redux-based state management setup and is responsible for managing authentication-related state in an application. This layer often includes actions, reducers, and selectors specifically focused on handling user authentication related state changes. |
 | ExcelService                  | The ExcelService layer is a service layer designed to manage interactions with Excel using the Excel JavaScript API. This layer abstracts away the complexities of working directly with the API, providing a structured interface to interact with Excel worksheets, cells, tables, charts, and other elements. |
 
-Thorough understanding of how the system operates
- What the components do, their responsibilities, and how they interact.
-
  ### Authentication Flow
 
 ![Auth Flow](auth.png)
