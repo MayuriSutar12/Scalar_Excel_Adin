@@ -34,14 +34,6 @@ At each layer, the following operations are performed:
 2. The `createTable` method makes a gRPC request to the Scalar cluster and returns the response.
    
 
-![Excel Add-In Database Management Alter Table](excel-add-in-database-management-alter-table.png)
-
-Alter Table is a sub-functionality of Database Management, allowing the Admin to alter a table in the database.  
-At each layer, the following operations are performed:
-
-1. **CreateTableContainer**: Collects the column details, drop index, and create index details from the user and calls the `addNewColumnToTable`, `dropIndex`, and `createIndex` methods in `GrpcAdminApiService`.
-2. The `addNewColumnToTable`, `dropIndex`, and `createIndex` methods make a gRPC request to the Scalar cluster and return the response.
-
 ![Excel Add-In Database Management Drop Table](excel-add-in-database-management-drop-table.png)
 
 Drop Table is a sub-functionality of Database Management, allowing the Admin to drop a table in the database.  
@@ -50,6 +42,13 @@ At each layer, the following operations are performed:
 1. **DatabaseManagementPage**: When the user clicks on the delete icon, it takes the table name and database name and calls the `dropTable` method in `GrpcAdminApiService`.
 2. The `dropTable` method makes a gRPC request to the Scalar cluster and returns the response.
 
+![Excel Add-In Database Management Alter Table](excel-add-in-database-management-alter-table.png)
+
+Alter Table is a sub-functionality of Database Management, allowing the Admin to alter a table in the database.  
+At each layer, the following operations are performed:
+
+1. **CreateTableContainer**: Collects the column details, drop index, and create index details from the user and calls the `addNewColumnToTable`, `dropIndex`, and `createIndex` methods in `GrpcAdminApiService`.
+2. The `addNewColumnToTable`, `dropIndex`, and `createIndex` methods make a gRPC request to the Scalar cluster and return the response.
 
 ### User Management
  ![Get All Users](getAllusers.png)
@@ -59,7 +58,7 @@ At each layer, the following operations are performed:
 
 1. **UserManagementPage**: It takes the namespace name and calls the `getAllUsers` method in `GrpcAdminApiService`.
 2. The `getAllUsers` method makes a gRPC request to the Scalar cluster and returns the response.
-3. 
+
 ![Create User](create-user.png)
 
 Create User is a sub-functionality of User Management, allowing the Admin to create a user in the database.  
