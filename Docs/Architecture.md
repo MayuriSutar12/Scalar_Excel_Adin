@@ -141,6 +141,7 @@ Thorough understanding of how the system operates
 ![Excel Add-In Database Management 2](excel-add-in-database-management2.png)
 
 ### User Management
+![Excel Add-in User Management](excel-add-in-user-management.png)
 
 ### Data Flow -How information moves within the system.
 
