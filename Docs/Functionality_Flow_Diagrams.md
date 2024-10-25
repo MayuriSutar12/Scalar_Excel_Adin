@@ -147,7 +147,7 @@ At each layer, the following operations are performed:
 
 ### Flow Diagrams of Important Functionalities
 
-**User Flow**
+**Application User Flow**
 
 ![User Flow](UserFlow.jpg)
 
