@@ -23,13 +23,13 @@ Thorough understanding of how the system operates
 
 **Database Operations**
 *Admin/Other user
-![Database Operations](Docs/DatabaseOperations.png)
+![Database Operations](DatabaseOperations.png)
 
 **Database Management**
-![Database Management](Docs/DatabaseMangment.png)
+![Database Management](DatabaseMangment.png)
 
 **User management**
-![User Management](Docs/UserManagment.png)
+![User Management](UserManagment.png)
 
 
 
