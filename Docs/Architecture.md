@@ -140,7 +140,7 @@ Thorough understanding of how the system operates
 ![Excel Add-In Database Management](excel-add-in-database-management.png)
 ![Excel Add-In Database Management 2](excel-add-in-database-management2.png)
 
-User Management
+### User Management
    
 # Security Considerations
 
