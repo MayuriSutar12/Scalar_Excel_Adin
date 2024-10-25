@@ -144,13 +144,13 @@ Thorough understanding of how the system operates
 
 ### Data Flow -How information moves within the system.
 **User flow**
-![User Flow](Docs/UserFlow.png)
+![User Flow](UserFlow.png)
 
 **Admin User**
-![Admin User](Docs/AdminUser.png)
+![Admin User](AdminUser.png)
 
 **Other User**
-![Other User](Docs/OtherUser.png)
+![Other User](OtherUser.png)
 
 # Security Considerations
 
