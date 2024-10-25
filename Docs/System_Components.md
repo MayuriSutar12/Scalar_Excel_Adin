@@ -19,18 +19,18 @@ Thorough understanding of how the system operates
 
 **User Flow**
 
-![User Flow](Docs/UserFlow.jpg)
+![User Flow](UserFlow.jpg)
 
 **Database Operations**
 - Admin/Other user
-![Database Operations](Docs/DatabaseOperations.jpg)
+![Database Operations](DatabaseOperations.jpg)
 
 
 **Database Management**
-![Database Management](Docs/Database%20Management.jpg)
+![Database Management](Database%20Management.jpg)
 
 **User management**
-![User Management](Docs/UserManagement.jpg)
+![User Management](UserManagement.jpg)
 
 
 
