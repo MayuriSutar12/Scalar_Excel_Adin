@@ -28,7 +28,7 @@ These files correspond to ScalarDB Cluster version 3.13.0 and define the communi
 The `scalardb-cluster-custom-values.yaml` file is used to deploy the ScalarDB cluster using Helm. It defines the custom configurations required for creating the ScalarDB cluster.
 
 
-# Interface Description
+## Interface Description
 
 This application leverages the ScalarDB Cluster gRPC API to perform various database operations. Client stub code was generated in React from Proto files to facilitate interaction with the ScalarDB cluster. The front-end, built using React, ensures seamless integration with the ScalarDB cluster, enabling efficient execution of database operations via the gRPC API.
 
@@ -43,7 +43,7 @@ The project is built using React version 18.2.0 and requires the ScalarDB Cluste
 - **Protocol Buffers**: v27.3
 - **ScalarDB Cluster Product Version**: 3.12.2
 
-# Functionalities
+## Functionalities
 
 **These are functionalities listed below.**
 
