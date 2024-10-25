@@ -4,7 +4,7 @@ Thorough understanding of how the system operates
 
  ### Authentication Flow
 ![Create User](create-user.png)
-## Create User
+
 Create User is a sub-functionality of User Management, allowing the Admin to create a user in the database.  
 At each layer, the following operations are performed:
 
@@ -12,7 +12,7 @@ At each layer, the following operations are performed:
 2. The `createUser` and `grantPrivileges` methods make a gRPC request to the Scalar cluster and return the response.
 
 ![Delete User](delete-user.png)
-## Delete User
+
 Delete User is a sub-functionality of User Management, allowing the Admin to delete a user.  
 At each layer, the following operations are performed:
 
@@ -20,7 +20,7 @@ At each layer, the following operations are performed:
 2. The `dropUser` method makes a gRPC request to the Scalar cluster and returns the response.
 
 ![Get All Users](getAllusers.png)
-## Get All Users
+
 Get All Users is a sub-functionality of User Management, allowing the Admin to see the list of users.  
 At each layer, the following operations are performed:
 
@@ -29,7 +29,6 @@ At each layer, the following operations are performed:
 
 ![Update User](update-user.png)
 
-## Update User
 Update User is a sub-functionality of User Management, allowing the Admin to update a user in the database.  
 At each layer, the following operations are performed:
 
