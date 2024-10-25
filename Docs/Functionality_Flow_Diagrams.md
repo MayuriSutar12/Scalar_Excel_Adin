@@ -13,8 +13,54 @@ At each layer, the following operations are performed:
 
 
 ### Database Operations
-![Excel Add-In Database Operations](excel-add-in-database-operations.png)
-![Excel Add-in Database Operations](excel-add-in-database-operations2.png)
+
+![Database Operations View Table List](database-operations-view-table-list.png)
+At each layer, the following operations are performed:
+
+1. **DatabaseOperationPage**: Collects the namespace from the user and calls the `GetAllTables` method in `AppGrpcService`.
+2. The `GetAllTables` method makes a gRPC request to the Scalar cluster and returns a response.
+3. The `DatabaseOperationPage` forwards the response to `ExcelService` through the `WriteDataToSheet` method.
+4. The `WriteDataToSheet` method writes the data to an Excel sheet using the Excel JavaScript API.
+5. 
+![Database Operations Scan](database-operations-scan.png)
+
+Scan is a sub-functionality of Database Operations, allowing the user to filter data based on the partition-key and clustering-key.  
+At each layer, the following operations are performed:
+
+1. **ScanContainer**: Collects partition-key and clustering-key from the user and calls the `scanByPartitionKeyAndClusteringKey` method in `AppGrpcService`.
+2. The `scanByPartitionKeyAndClusteringKey` method makes a gRPC request to the Scalar cluster and returns a response.
+3. The `ScanContainer` forwards the response to `ExcelService` through the `MapDataToExcel` method.
+4. The `MapDataToExcel` method writes the data to an Excel sheet using the Excel JavaScript API.
+
+![Database Operations Scan By Index](database-operations-scan-by-index.png)
+## Scan By Index
+Scan By Index is a sub-functionality of Database Operations, allowing the user to filter data based on the partition-key and clustering-key.  
+At each layer, the following operations are performed:
+
+1. **ScanByIndexContainer**: Collects the secondary index from the user and calls the `scanByIndex` method in `AppGrpcService`.
+2. The `scanByIndex` method makes a gRPC request to the Scalar cluster and returns a response.
+3. The `ScanByIndexContainer` forwards the response to `ExcelService` through the `MapDataToExcel` method.
+4. The `MapDataToExcel` method writes the data to an Excel sheet using the Excel JavaScript API.
+
+![Database Operations Joins](database-operations-Joins.png)
+## Join
+Join is a sub-functionality of Database Operations, allowing the user to join two tables and filter with index.  
+At each layer, the following operations are performed:
+
+1. **JoinContainer**: Collects the first table name, second table name, first table column name, and second table column name (optional filter with index data) from the user and calls the `executeQuery` method in `AppGrpcService`.
+2. The `executeQuery` method makes a gRPC request to the Scalar cluster and returns a response.
+3. The `JoinContainer` forwards the response to `ExcelService` through the `WriteJoinsTableDataToSheet` method.
+4. The `WriteJoinsTableDataToSheet` method writes the data to an Excel sheet using the Excel JavaScript API.
+
+![Database Operations Update](database-operations-update.png)
+
+## Insert, Update, and Delete
+Insert, Update, and Delete is a sub-functionality of Database Operations, allowing the user to perform these actions in a table.  
+At each layer, the following operations are performed:
+
+1. Collects the table data from the Excel sheet and calls the `executeUpdate` and `executeDelete` methods in `AppGrpcService`.
+2. The `executeUpdate` and `executeDelete` methods make a gRPC request to the Scalar cluster and return a response.
+
 
 ### Database Management
 ![Get All Tables](getAllTables.png)
