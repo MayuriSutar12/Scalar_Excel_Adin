@@ -117,7 +117,7 @@ Move to main branch.
 #### Install Dependencies
 Execute the following command:
 ```bash
---legacy-peer-deps
+npm install --legacy-peer-deps
 ```
 
 #### Update the Base Path
