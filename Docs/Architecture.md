@@ -135,7 +135,7 @@ Thorough understanding of how the system operates
 
 ### Database Operations
 ![Excel Add-In Database Operations](excel-add-in-database-operations.png)
-![Excel Add-in Database Operations](Docs/excel-add-in-database-operations2.png)
+![Excel Add-in Database Operations](excel-add-in-database-operations2.png)
 
 ### Database Management
 ![Excel Add-In Database Management](excel-add-in-database-management.png)
