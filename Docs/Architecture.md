@@ -141,7 +141,17 @@ Thorough understanding of how the system operates
 ![Excel Add-In Database Management 2](excel-add-in-database-management2.png)
 
 ### User Management
-   
+
+### Data Flow -How information moves within the system.
+**User flow**
+![User Flow](Docs/UserFlow.png)
+
+**Admin User**
+![Admin User](Docs/AdminUser.png)
+
+**Other User**
+![Other User](Docs/OtherUser.png)
+
 # Security Considerations
 
 In our system, authentication, authorization, and data protection are achieved through the use of **ScalarDB authentication** within the **ScalarDB cluster takes care of it**.
