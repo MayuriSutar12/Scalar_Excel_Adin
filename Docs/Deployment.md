@@ -112,12 +112,12 @@ Clone the project from GitLab:
 [Excel Add-In Repository](https://gitlab.com/scalarlabs/partners/percept-consulting-services/excel-add-in.git)
 
 #### Navigate to the Project Directory
-Move to the `excel-addin-in-react` branch.
+Move to main branch.
 
 #### Install Dependencies
 Execute the following command:
 ```bash
-npm install
+--legacy-peer-deps
 ```
 
 #### Update the Base Path
