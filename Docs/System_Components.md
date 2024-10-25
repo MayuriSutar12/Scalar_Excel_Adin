@@ -23,7 +23,7 @@ Thorough understanding of how the system operates
 
 **Database Operations**
 *Admin/Other user
-![Database Operations](DatabaseOperations.png)
+
 
 **Database Management**
 ![Database Management](DatabaseMangment.png)
