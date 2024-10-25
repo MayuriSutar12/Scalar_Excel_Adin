@@ -8,6 +8,9 @@ It works with all the underlying databases that ScalarDB supports.
 
 
 [System Architecture](Docs/System_Architecture.md)
+
 [System Components](Docs/System_Components.md)
+
 [Security Considerations](Docs/Security_Considerations.md)
+
 [Deployment](Docs/Deployment.md)
