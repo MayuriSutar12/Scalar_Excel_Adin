@@ -1,4 +1,4 @@
-# System Components 
+# Functionality Flow Diagrams
 Thorough understanding of how the system operates
  What the components do, their responsibilities, and how they interact.
 
@@ -15,7 +15,7 @@ Thorough understanding of how the system operates
 ### User Management
 ![Excel Add-in User Management](excel-add-in-user-management.png)
 
-### Data Flow -How information moves within the system.
+### Flow Diagrams of Important Functionalities
 
 **User Flow**
 
