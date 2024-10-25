@@ -14,5 +14,5 @@ It works with all the underlying databases that ScalarDB supports.
 
 [Security Considerations](Docs/Security_Considerations.md)
 
-[Deployment Documentation](./Docs/Deployment.md)
+[Deployment Documentation](Docs/Deployment.md)
 
