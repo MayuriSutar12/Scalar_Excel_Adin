@@ -8,7 +8,7 @@ Admins and users are authenticated using credentials verified by the ScalarDB cl
 
 Admin login is responsible for managing user privileges for namespaces and tables, ensuring internal data protection.
 
-# Error handling
+## Error handling
 How the system reacts when errors and exceptions occur. 
 | **Operation**                          | **Error Scenario**                                                                                              | **System Response**                                                                                                                                                                                                                 |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
