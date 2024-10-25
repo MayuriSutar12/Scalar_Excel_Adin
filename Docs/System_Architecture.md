@@ -1,15 +1,15 @@
-## System Architecture
+## Application Architecture 
 
 ### Objective
 The primary objective of this Excel Add-in is to streamline database management for users interacting with underlying ScalarDB, making it more accessible and user-friendly. It aims to eliminate the need for complex database commands or external tools by integrating database operations directly into Excel, allowing users to manage their ScalarDB data in a familiar environment. 
 
 This tool empowers both technical and non-technical users to efficiently perform tasks such as data querying, record management, and administrative operations, all while reducing the potential for errors and increasing productivity.
 
-## Application Architecture
+### System Architecture Diagram
 
 ![System Design Diagram](System_Design_Diagram.png)
 
-### Key Files and Their Explanations in the Application
+### Key Configuration Files
 
 Key configuration files include:
 
