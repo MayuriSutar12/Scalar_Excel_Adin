@@ -57,7 +57,7 @@ In ScalarDB, a namespace called **"scalardb"** is automatically created, along w
 
 The system uses an external database for storing users and other related information.
 
-## ScalarDB Cluster Configuration
+### ScalarDB Cluster Configuration
 
 We need to configure databases in the ScalarDB cluster in the `scalardb-cluster-custom-values.yaml` file.
 
