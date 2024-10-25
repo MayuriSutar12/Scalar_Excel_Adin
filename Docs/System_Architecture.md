@@ -42,34 +42,7 @@ The project is built using React version 18.2.0 and requires the ScalarDB Cluste
 - **React Version**: 18.2.0
 - **Protocol Buffers**: v27.3
 - **ScalarDB Cluster Product Version**: 3.12.2
-
-## Functionalities
-
-**These are functionalities listed below.**
-
-| Functionality                                        | Admin | Normal User | Corresponding gRPC API           |
-|-----------------------------------------------------|-------|-------------|-----------------------------------|
-| **1. Authentication**                               |       |             |                                   |
-| Login                                               | Yes   | Yes         | /login                            |
-| Logout                                              | Yes   | Yes         | /logout                           |
-| **2. Dashboard**                                    |       |             |                                   |
-| Fetch all namespaces within the cluster             | Yes   | Yes         | /getNamespaceNames                |
-| Scan records based on a specified partition and clustering key | Yes   | Yes         | /scan                             |
-| Fetch table metadata (Partition key, Clustering key, etc.) | Yes   | Yes         | /getTableMetadata                 |
-| Scan records based on a specified index (with/without a limit) | Yes   | Yes         | /scan                             |
-| Delete record by partition key and clustering key    | Yes   | Yes         | /delete                           |
-| Insert and update records                            | Yes   | Yes         | /put                              |
-| Start, commit, rollback transactions                | Yes   | Yes         | /begin, /commit, /rollback        |
-| Join tables (Inner, Left, Right Join)              | Yes   | Yes         | /execute                          |
-| **3. Database Management**                           |       |             |                                   |
-| Create table                                       | Yes   | No          | /createTable                      |
-| Drop table                                         | Yes   | No          | /dropTable                        |
-| Add new column to the table                        | Yes   | No          | /addNewColumnToTable              |
-| Create index in an existing table                  | Yes   | No          | /createIndex                      |
-| Drop index in an existing table                     | Yes   | No          | /dropIndex                        |
-
-
-# Major Application Constraints
+## Application Constraints
 
 - **Scope**: The scope of this design is specifically for the Microsoft Excel desktop application and does not consider Google Worksheets.
   
@@ -126,3 +99,30 @@ scalar.db.multi_storage.namespace_mapping=coordinator:mysql,scalar_file_manageme
 # Default storage(default _storage will hold all the authentication related details)
 scalar.db.multi_storage.default_storage=mysql
 ```
+
+## Functionalities
+
+**These are functionalities listed below.**
+
+| Functionality                                        | Admin | Normal User | Corresponding gRPC API           |
+|-----------------------------------------------------|-------|-------------|-----------------------------------|
+| **1. Authentication**                               |       |             |                                   |
+| Login                                               | Yes   | Yes         | /login                            |
+| Logout                                              | Yes   | Yes         | /logout                           |
+| **2. Dashboard**                                    |       |             |                                   |
+| Fetch all namespaces within the cluster             | Yes   | Yes         | /getNamespaceNames                |
+| Scan records based on a specified partition and clustering key | Yes   | Yes         | /scan                             |
+| Fetch table metadata (Partition key, Clustering key, etc.) | Yes   | Yes         | /getTableMetadata                 |
+| Scan records based on a specified index (with/without a limit) | Yes   | Yes         | /scan                             |
+| Delete record                                       | Yes   | Yes         | /delete                           |
+| Insert and update records                            | Yes   | Yes         | /put                              |
+| Start, commit, rollback transactions                | Yes   | Yes         | /begin, /commit, /rollback        |
+| Join tables (Inner, Left, Right Join)              | Yes   | Yes         | /execute                          |
+| **3. Database Management**                           |       |             |                                   |
+| Create table                                       | Yes   | No          | /createTable                      |
+| Drop table(Delete table)                                        | Yes   | No          | /dropTable                        |
+| Add new column to the table                        | Yes   | No          | /addNewColumnToTable              |
+| Create index in an existing table                  | Yes   | No          | /createIndex                      |
+| Drop index in an existing table                     | Yes   | No          | /dropIndex                        |
+
+
