@@ -103,7 +103,7 @@ scalar.db.multi_storage.default_storage=mysql
 
 ## Functionalities
 
-**These are functionalities listed below.**
+**The functionalities implemented are as listed below.**
 
 
 | Functionality                                                                                       | Admin | Normal User | gRPC API Endpoint               |
@@ -116,13 +116,12 @@ scalar.db.multi_storage.default_storage=mysql
 | Scan records based on a specified partition key and clustering key                                 | Yes   | Yes         | `/scan`                          |
 | Fetch table metadata (Partition key, Clustering key, Secondary Index, Column name, Column type)    | Yes   | Yes         | `/getTableMetadata`              |
 | Scan records based on a specified index, with or without a specified limit                         | Yes   | Yes         | `/scan`                          |
-| Delete record by partition key and clustering key                                                  | Yes   | Yes         | `/delete`                        |
+| Delete record                                                                                      | Yes   | Yes         | `/delete`                        |
 | Insert and Update record                                                                           | Yes   | Yes         | `/put`                           |
-| Start Transaction, Commit Transaction, Rollback Transaction                                        | Yes   | Yes         | `/begin`, `/commit`, `/rollback` |
 | Join Table (Inner Join, Left Join, Right Join)                                                     | Yes   | Yes         | `/execute`                       |
 | **Database Management**                                                                            |       |             |                                  |
 | Create table                                                                                       | Yes   | No          | `/createTable`                   |
-| Drop table                                                                                         | Yes   | No          | `/dropTable`                     |
+| Drop table(Delete table)                                                                                         | Yes   | No          | `/dropTable`                     |
 | Add new column to table                                                                            | Yes   | No          | `/addNewColumnToTable`           |
 | Create index in existing table                                                                     | Yes   | No          | `/createIndex`                   |
 | Drop index in existing table                                                                       | Yes   | No          | `/dropIndex`                     |
