@@ -145,7 +145,7 @@ Thorough understanding of how the system operates
 
 ### Data Flow -How information moves within the system.
 
-**User flow**
+**User Flow**
 
 ![User Flow](UserFlow.png)
 
