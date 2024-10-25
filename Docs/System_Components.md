@@ -22,7 +22,8 @@ Thorough understanding of how the system operates
 ![User Flow](UserFlow.png)
 
 **Database Operations**
-*Admin/Other user
+- Admin/Other user
+![Database Operations](DatabaseOperations.png)
 
 
 **Database Management**
