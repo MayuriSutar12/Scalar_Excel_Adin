@@ -16,3 +16,6 @@ It works with all the underlying databases that ScalarDB supports.
 
 [Deployment Documentation](Docs/Deployment.md)
 
+[How to Use Scalar Excel Add-in](Docs/how_to_use_excel_addin.md)
+
+
