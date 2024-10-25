@@ -105,25 +105,32 @@ scalar.db.multi_storage.default_storage=mysql
 
 **These are functionalities listed below.**
 
-| Functionality                                        | Admin | Normal User | Corresponding gRPC API           |
-|-----------------------------------------------------|-------|-------------|-----------------------------------|
-| **1. Authentication**                               |       |             |                                   |
-| Login                                               | Yes   | Yes         | /login                            |
-| Logout                                              | Yes   | Yes         | /logout                           |
-| **2. Dashboard**                                    |       |             |                                   |
-| Fetch all namespaces within the cluster             | Yes   | Yes         | /getNamespaceNames                |
-| Scan records based on a specified partition and clustering key | Yes   | Yes         | /scan                             |
-| Fetch table metadata (Partition key, Clustering key, etc.) | Yes   | Yes         | /getTableMetadata                 |
-| Scan records based on a specified index (with/without a limit) | Yes   | Yes         | /scan                             |
-| Delete record                                       | Yes   | Yes         | /delete                           |
-| Insert and update records                            | Yes   | Yes         | /put                              |
-| Start, commit, rollback transactions                | Yes   | Yes         | /begin, /commit, /rollback        |
-| Join tables (Inner, Left, Right Join)              | Yes   | Yes         | /execute                          |
-| **3. Database Management**                           |       |             |                                   |
-| Create table                                       | Yes   | No          | /createTable                      |
-| Drop table(Delete table)                                        | Yes   | No          | /dropTable                        |
-| Add new column to the table                        | Yes   | No          | /addNewColumnToTable              |
-| Create index in an existing table                  | Yes   | No          | /createIndex                      |
-| Drop index in an existing table                     | Yes   | No          | /dropIndex                        |
+| Functionality           | Action                                                         | Admin | Normal User | Corresponding gRPC API                    |
+|-------------------------|---------------------------------------------------------------|-------|-------------|-------------------------------------------|
+| **1. Authentication**   |                                                               |       |             |                                           |
+|                         | Login                                                         | Yes   | Yes         | /login                                    |
+|                         | Logout                                                        | Yes   | Yes         | /logout                                   |
+| **2. Database Operations** |                                                           |       |             |                                           |
+|                         | Fetch all namespaces within the cluster                       | Yes   | Yes         | /getNamespaceNames                        |
+|                         | Scan records based on a specified partition key and clustering key | Yes | Yes     | /scan                                     |
+|                         | Fetch table metadata (Partition key, Clustering key, Secondary Index, Column name, Column type) | Yes | Yes | /getTableMetadata                         |
+|                         | Scan records based on a specified index, with or without a specified limit | Yes | Yes | /scan                                     |
+|                         | Delete record by partition key and clustering key             | Yes   | Yes         | /delete                                   |
+|                         | Insert and Update record                                      | Yes   | Yes         | /put                                      |
+|                         | Start Transaction, Commit Transaction, Rollback Transaction   | Yes   | Yes         | /begin, /commit, /rollback                |
+|                         | Join Table (Inner Join, Left Join, Right Join)                | Yes   | Yes         | /execute                                  |
+| **3. Database Management** |                                                          |       |             |                                           |
+|                         | Create table                                                 | Yes   | No          | /createTable                              |
+|                         | Drop table                                                   | Yes   | No          | /dropTable                                |
+|                         | Add new column to table                                      | Yes   | No          | /addNewColumnToTable                      |
+|                         | Create index in existing table                               | Yes   | No          | /createIndex                              |
+|                         | Drop index in existing table                                 | Yes   | No          | /dropIndex                                |
+| **4. User Management**  |                                                               |       |             |                                           |
+|                         | Fetch all users                                              | Yes   | No          | /getUsers                                 |
+|                         | Create user                                                  | Yes   | No          | /createUser                               |
+|                         | Drop user                                                    | Yes   | No          | /dropUser                                 |
+|                         | Grant privileges to user                                     | Yes   | No          | /grant                                    |
+|                         | Revoke user privileges                                       | Yes   | No          | /revoke                                   |
+|                         | Fetch user privileges                                        | Yes   | No          | /getPrivileges                            |
 
 
