@@ -112,7 +112,7 @@ Clone the project from GitLab:
 [Excel Add-In Repository](https://gitlab.com/scalarlabs/partners/percept-consulting-services/excel-add-in.git)
 
 #### Navigate to the Project Directory
-Move to main branch.
+Move to `main` branch and navigate to Scalar-Add-In directory.
 
 #### Install Dependencies
 Execute the following command:
