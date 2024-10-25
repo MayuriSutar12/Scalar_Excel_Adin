@@ -298,10 +298,12 @@ Copy the address for future use.
 
 ### 4. DNS Configuration in AWS Route 53
 Now that the Kubernetes configurations are set up, you'll need to configure DNS:
-- Go to your Route 53 Hosted Zone.
-- Create a CNAME record that points your custom domain to the Load Balancer’s DNS name:
-  - **Name**: `envoy.exceladdinbyscalar.com`
-  - **Value**: (paste the address of `scalardb-envoy-ingress`)
-  - **Type**: CNAME
-- Save the record.
+
+1. Go to your **Route 53 Hosted Zone**.
+2. Create a CNAME record that points your custom domain to the Load Balancer’s DNS name:
+   - **Name**: `envoy.yoursubdomain.example.com`  
+     Replace "yoursubdomain.example.com" with your registered name.
+   - **Value**: (paste the address of `scalardb-envoy-ingress`)
+   - **Type**: CNAME
+3. Save the record.
 
