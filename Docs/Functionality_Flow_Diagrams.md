@@ -37,7 +37,8 @@ At each layer, the following operations are performed:
 2. The `GetAllTables` method makes a gRPC request to the Scalar cluster and returns a response.
 3. The `DatabaseOperationPage` forwards the response to `ExcelService` through the `WriteDataToSheet` method.
 4. The `WriteDataToSheet` method writes the data to an Excel sheet using the Excel JavaScript API.
-5. 
+
+ 
 ![Database Operations Scan](database-operations-scan.png)
 
 Scan is a sub-functionality of Database Operations, allowing the user to filter data based on the partition-key and clustering-key.  
@@ -47,6 +48,7 @@ At each layer, the following operations are performed:
 2. The `scanByPartitionKeyAndClusteringKey` method makes a gRPC request to the Scalar cluster and returns a response.
 3. The `ScanContainer` forwards the response to `ExcelService` through the `MapDataToExcel` method.
 4. The `MapDataToExcel` method writes the data to an Excel sheet using the Excel JavaScript API.
+
 
 ![Database Operations Scan By Index](database-operations-scan-by-index.png)
 
@@ -58,6 +60,7 @@ At each layer, the following operations are performed:
 3. The `ScanByIndexContainer` forwards the response to `ExcelService` through the `MapDataToExcel` method.
 4. The `MapDataToExcel` method writes the data to an Excel sheet using the Excel JavaScript API.
 
+
 ![Database Operations Joins](database-operations-Joins.png)
 
 Join is a sub-functionality of Database Operations, allowing the user to join two tables and filter with index.  
@@ -67,6 +70,7 @@ At each layer, the following operations are performed:
 2. The `executeQuery` method makes a gRPC request to the Scalar cluster and returns a response.
 3. The `JoinContainer` forwards the response to `ExcelService` through the `WriteJoinsTableDataToSheet` method.
 4. The `WriteJoinsTableDataToSheet` method writes the data to an Excel sheet using the Excel JavaScript API.
+
 
 ![Database Operations Update](database-operations-update.png)
 
@@ -78,6 +82,7 @@ At each layer, the following operations are performed:
 
 
 ### Database Management
+
 ![Get All Tables](getAllTables.png)
 
 Get All Tables is a sub-functionality of User Management, allowing the Admin to see the list of tables.  
@@ -85,6 +90,7 @@ At each layer, the following operations are performed:
 
 1. **DatabaseManagementPage**: It takes the namespace name and calls the `getAllTables` method in `GrpcAdminApiService`.
 2. The `getAllTables` method makes a gRPC request to the Scalar cluster and returns the response.
+
 
 ![Excel Add-In Database Management Create Table](excel-add-in-database-management-create-table.png)
 
@@ -102,6 +108,7 @@ At each layer, the following operations are performed:
 
 1. **DatabaseManagementPage**: When the user clicks on the delete icon, it takes the table name and database name and calls the `dropTable` method in `GrpcAdminApiService`.
 2. The `dropTable` method makes a gRPC request to the Scalar cluster and returns the response.
+
 
 ![Excel Add-In Database Management Alter Table](excel-add-in-database-management-alter-table.png)
 
