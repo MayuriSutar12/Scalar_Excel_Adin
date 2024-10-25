@@ -118,6 +118,7 @@ scalar.db.multi_storage.default_storage=mysql
 | Scan records based on a specified index, with or without a specified limit                         | Yes   | Yes         | `/scan`                          |
 | Delete record                                                                                      | Yes   | Yes         | `/delete`                        |
 | Insert and Update record                                                                           | Yes   | Yes         | `/put`                           |
+| Start Transaction, Commit Transaction, Rollback Transaction                                        | Yes   | Yes         | `/begin`, `/commit`, `/rollback` |
 | Join Table (Inner Join, Left Join, Right Join)                                                     | Yes   | Yes         | `/execute`                       |
 | **Database Management**                                                                            |       |             |                                  |
 | Create table                                                                                       | Yes   | No          | `/createTable`                   |
