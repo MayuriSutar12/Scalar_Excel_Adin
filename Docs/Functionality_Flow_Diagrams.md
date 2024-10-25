@@ -33,7 +33,7 @@ At each layer, the following operations are performed:
 4. The `MapDataToExcel` method writes the data to an Excel sheet using the Excel JavaScript API.
 
 ![Database Operations Scan By Index](database-operations-scan-by-index.png)
-## Scan By Index
+
 Scan By Index is a sub-functionality of Database Operations, allowing the user to filter data based on the partition-key and clustering-key.  
 At each layer, the following operations are performed:
 
@@ -43,7 +43,7 @@ At each layer, the following operations are performed:
 4. The `MapDataToExcel` method writes the data to an Excel sheet using the Excel JavaScript API.
 
 ![Database Operations Joins](database-operations-Joins.png)
-## Join
+
 Join is a sub-functionality of Database Operations, allowing the user to join two tables and filter with index.  
 At each layer, the following operations are performed:
 
@@ -54,7 +54,6 @@ At each layer, the following operations are performed:
 
 ![Database Operations Update](database-operations-update.png)
 
-## Insert, Update, and Delete
 Insert, Update, and Delete is a sub-functionality of Database Operations, allowing the user to perform these actions in a table.  
 At each layer, the following operations are performed:
 
