@@ -41,7 +41,7 @@ The project is built using React version 18.2.0 and requires the ScalarDB Cluste
 - **Excel Version**: Greater than 2019
 - **React Version**: 18.2.0
 - **Protocol Buffers**: v27.3
-- **ScalarDB Cluster Product Version**: 3.12.2
+- **ScalarDB Cluster Product Version**: 3.13.0
   
 ## Application Constraints
 
@@ -75,7 +75,7 @@ scalar.db.cross_partition_scan.filtering.enabled=true
 ```
 We need to configure the databases in scalardb-cluster-custom-values.yaml file
 
-For example check this below configuration for multi storage configuration for two mysql services creyed in k8s
+For example, check this below configuration for multi-storage configuration for two MySQL services created in k8s
 
 
 ```yaml
