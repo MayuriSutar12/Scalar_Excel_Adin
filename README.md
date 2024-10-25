@@ -10,7 +10,7 @@ It works with all the underlying databases that ScalarDB supports.
 
 [System Architecture](Docs/System_Architecture.md)
 
-[System Components](Docs/System_Components.md)
+[System Components](Docs/Functionality_Flow_Diagrams.md)
 
 [Security Considerations](Docs/Security_Considerations.md)
 
