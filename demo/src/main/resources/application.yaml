@@ -1,0 +1,41 @@
+# devMysql8
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:3.109.253.210:3306}/qbank_production_db?zeroDateTimeBehavior=convertToNull
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:CDRR00t}
+    hikari:
+      connection-timeout: 40000
+      minimum-idle: 10
+      maximum-pool-size: 50
+      idle-timeout: 120000
+      max-lifetime: 30000
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: com.example.demo.CustomNamingStrategy
+  application:
+    name: demo
+
+  security:
+    enabled: false
+    user:
+      password: none
+      name: none
+
+
+# Port number
+server:
+  port: 9090
+
+# Log file
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql: TRACE
+
+springdoc:
+  api-docs:
+    enabled: false
